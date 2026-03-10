@@ -29,3 +29,10 @@ document.getElementById("modoBtn").addEventListener("click", function() {
     document.body.classList.toggle("dark")
 
 })
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
+})
