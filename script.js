@@ -11,14 +11,20 @@ function registrar() {
 
     let nombre = document.getElementById("nombre").value
     let correo = document.getElementById("correo").value
-
+    let apellidos = document.getElementById("apellidos").value
     let regex = /@/
 
     if (nombre == "") {
         alert("Nombre obligatorio")
     }
 
-    if (regex.test = correo) {
+    if (apellidos == "") {
+        alert("Nombre obligatorio")
+    }
+
+    if (correo == "") {
+        alert("Correo obligatorio")
+    }else if (regex.test == correo) {
         alert("Correo inválido")
     }
 
