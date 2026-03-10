@@ -12,6 +12,7 @@ function registrar() {
     let nombre = document.getElementById("nombre").value
     let correo = document.getElementById("correo").value
     let apellidos = document.getElementById("apellidos").value
+    let edad = document.getElementById("edad").value
     let regex = /@/
 
     if (nombre == "") {
@@ -19,7 +20,13 @@ function registrar() {
     }
 
     if (apellidos == "") {
-        alert("Nombre obligatorio")
+        alert("apellidos obligatorio")
+    }
+
+    if (edad > 120){
+        alert("edad invalida")
+    }else if (edad < 5){
+        alert("edad invalida")
     }
 
     if (correo == "") {
